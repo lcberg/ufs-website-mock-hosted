@@ -5,6 +5,11 @@
     <nav class="flex items-center justify-between flex-wrap bg-dark-gray px-6 sticky">
       <router-link to="/">
         <img class="w-1/6 pt-3" :src="require('./assets/ufs_Logo.png')">
+        
+      </router-link>
+
+      <router-link to="/" class="absolute" style="right: 20px; bottom: 50px">
+        <i class="fas fa-home fa-3x float-right"></i>
       </router-link>
 
     </nav>

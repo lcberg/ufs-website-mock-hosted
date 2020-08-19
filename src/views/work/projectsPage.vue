@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex flex-row flex-wrap">
+  <div class="container mx-auto flex flex-row flex-wrap projectspagecontainer">
     <div class="imgcard text-left w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
@@ -85,5 +85,9 @@ export default {
 <style lang="scss" scoped>
   .imgcard {
     
+  }
+
+  .projectspagecontainer {
+    min-height: calc(100vh - 133px);
   }
 </style>

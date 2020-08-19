@@ -13,6 +13,7 @@ import smartPrepPage from '../views/fashion/smartPrepPage.vue';
 import servicePage from '../views/service/servicePage.vue';
 
 // work
+import workIndexPage from '../views/work/workIndexPage.vue';
 import workPage from '../views/work/workPage.vue';
 import approachPage from '../views/work/approachPage.vue';
 import productsPage from '../views/work/productsPage.vue';
@@ -63,21 +64,26 @@ const routes = [
     },
     {
         path: '/work',
-        component: workPage,
+        component: workIndexPage,
         name: 'work-page',
         children: [
             {
-                path: '/products',
+                path: '/',
+                component: workPage,
+                name: 'workpage'
+            },
+            {
+                path: 'products',
                 component: productsPage,
                 name: 'work-products-page'
             },
             {
-                path: '/projects',
+                path: 'projects',
                 component: projectsPage,
                 name: 'work-projects-page'
             },
             {
-                path: '/approach',
+                path: 'approach',
                 component: approachPage,
                 name: 'work-approach-page'
             }

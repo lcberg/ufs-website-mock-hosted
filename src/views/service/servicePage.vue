@@ -1,5 +1,5 @@
 <template>
-  <div class="container flex flex-wrap flex-grow mx-auto mt-5">
+  <div class="container flex flex-wrap flex-grow mx-auto mt-5 servicepagecontainer">
     <div class="w-1/3 relative p-2">
       <img src="../../assets/service/concept.jpg">
       <div class="description">
@@ -49,10 +49,14 @@ export default {
 <style>
   .description {
     position: absolute;
-    bottom: 50px;
+    bottom: 100px;
     left: 80px;
     color: white;
     font-size: 40px;
     font-weight: 700;
+  }
+
+  .servicepagecontainer {
+    min-height: calc(100vh - 133px);
   }
 </style>

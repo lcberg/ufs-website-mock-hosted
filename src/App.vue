@@ -1,8 +1,21 @@
 <template>
   <div id="app">
+    <nav class="flex items-center justify-between flex-wrap bg-dark-gray px-6 sticky">
+      <router-link to="/">
+        <img :src="require('./assets/ufs-logo.gif')">
+      </router-link>
+
+    </nav>
     <router-view/>
   </div>
 </template>
+
+<script>
+
+export default {
+
+}
+</script>
 
 <style lang="scss">
 #app {

@@ -1,36 +1,36 @@
 <template>
   <div class="container mx-auto flex flex-row flex-wrap approachpagecontainer mt-4 items-center justify-center">
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/plan.jpg')">
       <div class="absolute desctext text-red-700">
         <p>WE PLAN</p>
       </div>
     </div>
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/source.jpg')">
       <div class="absolute desctext text-white">
         <p>WE SOURCE</p>
       </div>
     </div>
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/make.jpg')">
       <div class="absolute desctext text-red-700">
         <p>WE MAKE</p>
       </div>
     </div>
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/brand.jpg')">
       <div class="absolute desctext">
         <p>WE BRAND</p>
       </div>
     </div>
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/store.jpg')">
       <div class="absolute desctext text-white">
         <p>WE STORE</p>
       </div>
     </div>
-    <div class="card relative w-1/3">
+    <div class="card relative w-full md:w-1/3">
       <img :src="require('../../assets/approach/mail.jpg')">
       <div class="absolute desctext">
         <p>WE DELIVER</p>
@@ -48,7 +48,7 @@ export default {
 
 <style lang="scss" scoped>
   .approachpagecontainer {
-    height: calc(100vh - 134px);
+    min-height: calc(100vh - 134px);
   }
 
   .desctext {

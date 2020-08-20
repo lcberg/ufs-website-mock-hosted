@@ -2,13 +2,13 @@
   <div id="app">
     
     
-    <nav class="flex items-center justify-between flex-wrap bg-dark-gray px-6 sticky">
+    <nav class="flex items-center justify-between flex-wrap bg-dark-gray px-3 md:px-6 sticky">
       <router-link to="/">
-        <img class="w-1/6 pt-3" :src="require('./assets/ufs_Logo.png')">
+        <img class="w-1/3 md:w-1/6 pt-1 md:pt-3" :src="require('./assets/ufs_Logo.png')">
         
       </router-link>
 
-      <router-link to="/" class="absolute" style="right: 20px; bottom: 50px">
+      <router-link to="/" class="absolute homebutton">
         <i class="fas fa-home fa-3x float-right"></i>
       </router-link>
 
@@ -133,4 +133,18 @@ html, body {
     }
   }
 }
+
+.homebutton {
+  bottom: 50px;
+  right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .homebutton {
+    bottom: unset;
+    top: 5px;
+    right: 15px;
+  }
+}
+
 </style>

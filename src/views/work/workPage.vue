@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto flex flex-grow items-center justify-around h-full workpagecontainer">
+  <div class="container mx-auto flex flex-grow items-center flex-col md:flex-row justify-around h-full workpagecontainer">
     <contentbutton
       totarget="work-products-page"
       header="PRODUCTS"

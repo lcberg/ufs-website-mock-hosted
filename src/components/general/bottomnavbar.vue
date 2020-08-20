@@ -1,5 +1,5 @@
 <template>
-  <div class="flex md:flex-row flex-col justify-around l-navbar w-5/6 mx-auto">
+  <div class="flex md:flex-row flex-row md:flex-row justify-around l-navbar w-5/6 mx-auto">
     <router-link to="/work">
       <div class="navbar-nav-elem">WORK</div>
     </router-link>
@@ -27,7 +27,14 @@ export default {
     .navbar-nav-elem {
       font-size: 40px;
       font-weight: 600;
+
+      @media only screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+
     }
+
+    
   
   }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container flex flex-col w-full max-w-full h-full fashionpagecontainer">
-    <div class="flex flex-grow justify-around w-2/3 mx-auto items-center">
+    <div class="flex flex-grow justify-center md:justify-around md:w-2/3 mx-auto flex-col md:flex-row items-center">
       <contentbutton 
         header="UNIQUE"
         target="https://handstich.de"

@@ -1,16 +1,19 @@
 <template>
-  <div class="face flex relative personintro">
-    <img :src="require('../../assets/faces/' + faceurl)">
-    <div class="traits w-1/3 ml-4 mt-20">
-      <p><b>location:</b> {{ location }}</p>
-      <p><b>motto:</b> {{ motto }}</p>
-      <p><b>something</b><br> {{ something }}</p>
+  <div>
+    <h2 class="md:none namecard">{{ name }}</h2>
+    <div class="face flex relative personintro my-5 md:my-0">
+      <img :src="require('../../assets/faces/' + faceurl)">
+      <div class="traits w-5/6 md:w-1/3 ml-4 md:mt-20">
+        <p><b>location:</b> {{ location }}</p>
+        <p><b>motto:</b> {{ motto }}</p>
+        <p><b>something</b><br> {{ something }}</p>
+      </div>
+      <div class="absolute hidden md:block w-3/5 z-50 namecard mx-3" style="bottom: 20px; height: 80px">
+        {{ name }}
+  
+      </div>
+  
     </div>
-    <div class="absolute w-3/5 z-50 namecard mx-3" style="bottom: 20px; height: 80px">
-      {{ name }}
-
-    </div>
-
   </div>
 </template>
 
@@ -48,6 +51,10 @@ export default {
     text-align: left;
     padding-left: 20px;
     font-weight: 600;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 20px
+    }
   }
 
   .personintro {

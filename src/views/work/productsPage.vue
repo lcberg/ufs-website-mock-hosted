@@ -1,21 +1,21 @@
 <template>
   <div class="container productspagecontainer flex flex-wrap flex-row mx-auto mt-4">
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/kids.jpg')">
     </div>
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/kitchen.jpg')">
     </div>
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/health.jpg')">
     </div>
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/food.jpg')">
     </div>
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/lifestyle.jpg')">
     </div>
-    <div class="w-1/3 p-1 imgcard">
+    <div class="w-full md:w-1/3 p-1 imgcard">
       <img :src="require('../../assets/products/audio.jpg')">
     </div>
   </div>

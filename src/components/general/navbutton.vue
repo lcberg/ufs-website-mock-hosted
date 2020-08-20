@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="routedest">
+  <router-link class="flex justify-center navbutton-container" :to="routedest">
     <div class="flex flex-col-reverse navbutton">
       <div class="navbutton-header font-black text-3xl my-2">
         {{ bottomHeader }}
@@ -39,12 +39,27 @@ export default {
     border-radius: 30px;
     width: 300px;
     height: 300px;
-    margin: 50px;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      height: 200px;
+    }
 
     &:hover {
       background: black;
       color: white;
       cursor: pointer;
+    }
+  }
+
+  .navbutton-container {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+      height: 200px;
+      margin: 0px;
     }
   }
 </style>

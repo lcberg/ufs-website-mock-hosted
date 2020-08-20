@@ -1,5 +1,5 @@
 <template>
-  <a v-if="target" :href="target">
+  <a class="flex justify-center my-2 contentbutton-container" v-if="target" :href="target">
     <div class="flex flex-col contentbutton items-center justify-center">
       <div class="contentbuttonheader">
         <h2>{{ header }}</h2>
@@ -11,7 +11,7 @@
     </div>
 
   </a>
-  <router-link :to="{ name: totarget }" v-else>
+  <router-link class="flex justify-center my-2 contentbutton-container" :to="{ name: totarget }" v-else>
     <div class="flex flex-col contentbutton items-center justify-center">
       <div class="contentbuttonheader">
         <h2>{{ header }}</h2>
@@ -48,11 +48,31 @@ export default {
       color: white;
       transition: all 200ms ease-in-out;
     }
+
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+      height: 200px;
+    }
   }
 
   .contentbuttonheader h2 {
     font-size: 40px;
     font-weight: 600;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+
+  }
+
+  .contentbutton-container {
+    width: 300px;
+    height: 300px;
+
+    @media only screen and (max-width: 768px) {
+      width: 80%;
+      height: 200px;
+    }
   }
 
 </style>

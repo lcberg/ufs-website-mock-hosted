@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto flex flex-row flex-wrap projectspagecontainer">
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Arts &amp; Cultrue
@@ -12,7 +12,7 @@
 
     </div>
 
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Banking &amp; Finance
@@ -24,7 +24,7 @@
 
     </div>
 
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Civic &amp; Public
@@ -36,7 +36,7 @@
 
     </div>
 
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Design &amp; Architecture
@@ -48,7 +48,7 @@
 
     </div>
 
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Education
@@ -60,7 +60,7 @@
 
     </div>
 
-    <div class="imgcard text-left w-1/3 p-2 text-xl">
+    <div class="imgcard text-left w-full md:w-1/3 p-2 text-xl">
       <div class="header">
         <h2>
           Healthcare
